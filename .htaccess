@@ -1,0 +1,143 @@
+<IfModule mod_rewrite.c>
+
+
+RewriteEngine On
+
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+
+Redirect 301 /portugues/ /pt/
+Redirect 301 /espanol/ /es/
+Redirect 301 /brasil/ /
+Redirect 301 /packagesperu.php /
+Redirect 301 /machupicchu.php /
+Redirect 301 /classicincatrail.php /
+Redirect 301 /alternativetrek.php /
+Redirect 301 /salkantay.php /
+Redirect 301 /incatrailantisuyo.php /
+Redirect 301 /incajungle.php /
+Redirect 301 /sacredvalley.php /
+Redirect 301 /marasmoray.php /
+Redirect 301 /packagecuscopuno.php /
+Redirect 301 /aboutus.php /
+Redirect 301 /contactus.php /
+Redirect 301 /reservations.php /
+Redirect 301 /weather.php /
+Redirect 301 /incatrailcomfort.php /
+Redirect 301 /fullpackageperu.php /
+Redirect 301 /classicmachupicchu.php /
+Redirect 301 /cuscoclassiccultural.php /
+Redirect 301 /cuscoclassicmodern.php /
+Redirect 301 /cuscoclassicarchaeological.php /
+Redirect 301 /cuscoclassicimperial.php /
+Redirect 301 /incatrailavailability.php /
+Redirect 301 /pay.php /
+Redirect 301 /lima-cusco-puno-9d8n.php /
+Redirect 301 /espanol/paquetesperu.php /
+Redirect 301 /espanol/machupicchu.php /
+Redirect 301 /espanol/caminoinca.php /
+Redirect 301 /espanol/alternativas.php /
+Redirect 301 /espanol/salkantay.php /
+Redirect 301 /espanol/caminoincaantisuyo.php /
+Redirect 301 /espanol/caminoincajungle.php /
+Redirect 301 /espanol/vallesagrado.php /
+Redirect 301 /espanol/marasmoraysalineras.php /
+Redirect 301 /espanol/cuscopunoalternativo.php /
+Redirect 301 /espanol/nosotros.php /
+Redirect 301 /espanol/contacto.php /
+Redirect 301 /espanol/reservas.php /
+Redirect 301 /espanol/clima.php /
+Redirect 301 /espanol/caminoincaclasico.php /
+Redirect 301 /espanol/lima-cusco-puno.php /
+Redirect 301 /espanol/paquetetodoperu.php /
+Redirect 301 /espanol/cuscoclasicomachupicchu.php /
+Redirect 301 /espanol/cuscoclasicocultural.php /
+Redirect 301 /espanol/cuscoclasicomoderno.php /
+Redirect 301 /espanol/disponibilidadcaminoinca.php /
+Redirect 301 /espanol/pagos.php /
+Redirect 301 /espanol/lima-cusco-puno-9d8n.php /
+Redirect 301 /espanol/cusco-puno-arequipa-lima.php /
+Redirect 301 /brasil/pacotesperu.php /
+Redirect 301 /brasil/machupicchu.php /
+Redirect 301 /brasil/trilhainca.php /
+Redirect 301 /brasil/alternativas.php /
+Redirect 301 /brasil/salkantay.php /
+Redirect 301 /brasil/trilhaincaantisuyo.php /
+Redirect 301 /brasil/incajungle.php /
+Redirect 301 /brasil/vallesagrado.php /
+Redirect 301 /brasil/marasmoraysalineras.php /
+Redirect 301 /brasil/cuscopunoalternativo.php /
+Redirect 301 /brasil/quemsomos.php /
+Redirect 301 /brasil/contato.php /
+Redirect 301 /brasil/reservas.php /
+Redirect 301 /brasil/trilhaincaclassica.php /
+Redirect 301 /brasil/trilhaincajungle.php /
+Redirect 301 /brasil/lima-cusco-puno.php /
+Redirect 301 /brasil/pacotetudoperu.php /
+Redirect 301 /brasil/cuscoclassicomachupicchu.php /
+Redirect 301 /brasil/cuscoclassicocultural.php /
+Redirect 301 /brasil/cuscoclassicomoderno.php /
+Redirect 301 /brasil/cuscoclassicarqueologico.php /
+Redirect 301 /brasil/cuscoclassicimperial.php /
+Redirect 301 /brasil/pagamento.php /
+Redirect 301 /brasil/lima-cusco-puno-9d8n.php /
+Redirect 301 /brasil/cusco-puno-arequipa-lima.php /
+Redirect 301 /cuscoclassicoptional.php /
+Redirect 301 /cuscoclassictraditional.php /
+Redirect 301 /cuscoclassicovernight.php /
+Redirect 301 /cuscoclassicconventional.php /
+Redirect 301 /shortincatrail.php /
+Redirect 301 /trailantisuyo.php /
+Redirect 301 /trailantisuyomachupicchu.php /
+Redirect 301 /trailantisuyopiuraymachupicchu.php /
+Redirect 301 /salkantaytrekmachupicchu.php /
+Redirect 301 /salkantaytrek.php /
+Redirect 301 /choquequiraotrek.php /
+Redirect 301 /Citytour.php /
+Redirect 301 /riverrafting.php /
+Redirect 301 /horseriding.php /
+Redirect 301 /espanol/cuscoclasicoopcional.php /
+Redirect 301 /espanol/cuscoclasicotradicional.php /
+Redirect 301 /espanol/cuscoclasicopernoite.php /
+Redirect 301 /espanol/cuscoclasicoconvencional.php /
+Redirect 301 /espanol/cuscoclasicarqueologico.php /
+Redirect 301 /espanol/cuscoclasicimperial.php /
+Redirect 301 /espanol/caminoincacorta.php /
+Redirect 301 /espanol/mapa.php?maps=1 /
+Redirect 301 /espanol/caminoantisuyo.php /
+Redirect 301 /espanol/caminoantisuyomachupicchu.php /
+Redirect 301 /espanol/caminoantisuyopiuraymachupicchu.php /
+Redirect 301 /espanol/caminosalkantaymachupicchu.php /
+Redirect 301 /espanol/caminosalkantay.php /
+Redirect 301 /espanol/caminochoquequirao.php /
+Redirect 301 /espanol/mapa.php?maps=2 /
+Redirect 301 /espanol/cityarqueologico.php /
+Redirect 301 /espanol/cabalgata.php /
+Redirect 301 /espanol/rafting.php /
+Redirect 301 /brasil/cuscoclassicoopcional.php /
+Redirect 301 /brasil/cuscoclassicotradicional.php /
+Redirect 301 /brasil/cuscoclassicopernoite.php /
+Redirect 301 /brasil/cuscoclassicoconvencional.php /
+Redirect 301 /brasil/trilhaincacurta.php /
+Redirect 301 /brasil/trilhaincadisponibilidade.php /
+Redirect 301 /brasil/mapa.php?maps=1 /
+Redirect 301 /brasil/trilhaantisuyo.php /
+Redirect 301 /brasil/trilhaantisuyomachupicchu.php /
+Redirect 301 /brasil/trilhaantisuyopiuraymachupicchu.php /
+Redirect 301 /brasil/trilhasalkantaymachupicchu.php /
+Redirect 301 /brasil/trilhasalkantay.php /
+Redirect 301 /brasil/trilhachoquequirao.php /
+Redirect 301 /brasil/mapa.php?maps=2 /
+Redirect 301 /brasil/cityarqueologico.php /
+Redirect 301 /brasil/cabalgata.php /
+Redirect 301 /brasil/rafting.php /
+Redirect 301 /brasil/trilhasalkantayitens.php /
+
+
+</IfModule>
+

@@ -1,0 +1,228 @@
+<IfModule mod_rewrite.c>
+
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTPS} off
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+ErrorDocument 404 /404.php
+
+Redirect 301 /portugues/ /pt/
+Redirect 301 /espanol/ /es/
+Redirect 301 /brasil/ /pt/
+
+
+#urls de seo con backlinks
+Redirect 301 /salkantaytrekmachupicchu.php /salkantay-trek-machu-picchu
+Redirect 301 /classicincatrail.php /classic-inca-trail-machu-picchu
+Redirect 301 /aboutus.php /about-us
+Redirect 301 /incajungle.php /inca-jungle-trail-machu-picchu
+Redirect 301 /machupicchu.php /cusco-machu-picchu-modern-classic-3days
+Redirect 301 /salkantaytrek.php /salkantay-trek-machu-picchu
+Redirect 301 /fullpackageperu.php /cusco-puno-alternative
+Redirect 301 /packagesperu.php /cusco-puno-alternative
+Redirect 301 /reservations.php /contact
+Redirect 301 /horseriding.php /alternative-treks-cusco/
+Redirect 301 /sacredvalley.php /sacred-valley-of-the-incas
+Redirect 301 /biking.php /salkantay-trek-machu-picchu
+Redirect 301 /riverrafting.php /salkantay-trek-machu-picchu
+Redirect 301 /alternativetrek.php /alternative-treks-cusco/
+Redirect 301 /incatrailcomfort.php /classic-inca-trail-machu-picchu
+Redirect 301 /brasil/incajungle.php /pt/trilha-salkantay-machu-picchu
+Redirect 301 /brasil/pacotesperu.php /pt/trilha-salkantay-machu-picchu
+Redirect 301 /brasil/trilhainca.php /pt/trilha-salkantay-machu-picchu
+Redirect 301 /brasil/trilhasalkantay.php /pt/trilha-salkantay-machu-picchu
+
+ 
+
+#Uls de la web antigua
+
+Redirect 301 /espanol/paquetesperu.php /
+Redirect 301 /espanol/machupicchu.php /
+Redirect 301 /espanol/caminoinca.php /
+Redirect 301 /espanol/alternativas.php /
+Redirect 301 /espanol/salkantay.php /
+Redirect 301 /espanol/caminoincaantisuyo.php /
+Redirect 301 /espanol/caminoincajungle.php /
+Redirect 301 /espanol/vallesagrado.php /
+Redirect 301 /espanol/marasmoraysalineras.php /
+Redirect 301 /espanol/cuscopunoalternativo.php /
+Redirect 301 /espanol/nosotros.php /
+Redirect 301 /espanol/contacto.php /
+Redirect 301 /espanol/reservas.php /
+Redirect 301 /espanol/clima.php /
+Redirect 301 /espanol/caminoincaclasico.php /
+Redirect 301 /espanol/lima-cusco-puno.php /
+Redirect 301 /espanol/paquetetodoperu.php /
+Redirect 301 /espanol/cuscoclasicomachupicchu.php /
+Redirect 301 /espanol/cuscoclasicocultural.php /
+Redirect 301 /espanol/cuscoclasicomoderno.php /
+Redirect 301 /espanol/disponibilidadcaminoinca.php /
+Redirect 301 /espanol/pagos.php /
+Redirect 301 /espanol/lima-cusco-puno-9d8n.php /
+Redirect 301 /espanol/cusco-puno-arequipa-lima.php /
+Redirect 301 /brasil/pacotesperu.php /
+Redirect 301 /brasil/machupicchu.php /
+Redirect 301 /brasil/trilhainca.php /
+Redirect 301 /brasil/alternativas.php /
+Redirect 301 /brasil/salkantay.php /
+Redirect 301 /brasil/trilhaincaantisuyo.php /
+Redirect 301 /brasil/incajungle.php /
+Redirect 301 /brasil/vallesagrado.php /
+Redirect 301 /brasil/marasmoraysalineras.php /
+Redirect 301 /brasil/cuscopunoalternativo.php /
+Redirect 301 /brasil/quemsomos.php /
+Redirect 301 /brasil/contato.php /
+Redirect 301 /brasil/reservas.php /
+Redirect 301 /brasil/trilhaincaclassica.php /
+Redirect 301 /brasil/trilhaincajungle.php /
+Redirect 301 /brasil/lima-cusco-puno.php /
+Redirect 301 /brasil/pacotetudoperu.php /
+Redirect 301 /brasil/cuscoclassicomachupicchu.php /
+Redirect 301 /brasil/cuscoclassicocultural.php /
+Redirect 301 /brasil/cuscoclassicomoderno.php /
+Redirect 301 /brasil/cuscoclassicarqueologico.php /
+Redirect 301 /brasil/cuscoclassicimperial.php /
+Redirect 301 /brasil/pagamento.php /
+Redirect 301 /brasil/lima-cusco-puno-9d8n.php /
+Redirect 301 /brasil/cusco-puno-arequipa-lima.php /
+Redirect 301 /espanol/cuscoclasicoopcional.php /
+Redirect 301 /espanol/cuscoclasicotradicional.php /
+Redirect 301 /espanol/cuscoclasicopernoite.php /
+Redirect 301 /espanol/cuscoclasicoconvencional.php /
+Redirect 301 /espanol/cuscoclasicarqueologico.php /
+Redirect 301 /espanol/cuscoclasicimperial.php /
+Redirect 301 /espanol/caminoincacorta.php /
+Redirect 301 /espanol/mapa.php?maps=1 /
+Redirect 301 /espanol/caminoantisuyo.php /
+Redirect 301 /espanol/caminoantisuyomachupicchu.php /
+Redirect 301 /espanol/caminoantisuyopiuraymachupicchu.php /
+Redirect 301 /espanol/caminosalkantaymachupicchu.php /
+Redirect 301 /espanol/caminosalkantay.php /
+Redirect 301 /espanol/caminochoquequirao.php /
+Redirect 301 /espanol/mapa.php?maps=2 /
+Redirect 301 /espanol/cityarqueologico.php /
+Redirect 301 /espanol/cabalgata.php /
+Redirect 301 /espanol/rafting.php /
+Redirect 301 /brasil/cuscoclassicoopcional.php /
+Redirect 301 /brasil/cuscoclassicotradicional.php /
+Redirect 301 /brasil/cuscoclassicopernoite.php /
+Redirect 301 /brasil/cuscoclassicoconvencional.php /
+Redirect 301 /brasil/trilhaincacurta.php /
+Redirect 301 /brasil/trilhaincadisponibilidade.php /
+Redirect 301 /brasil/mapa.php?maps=1 /
+Redirect 301 /brasil/trilhaantisuyo.php /
+Redirect 301 /brasil/trilhaantisuyomachupicchu.php /
+Redirect 301 /brasil/trilhaantisuyopiuraymachupicchu.php /
+Redirect 301 /brasil/trilhasalkantaymachupicchu.php /
+Redirect 301 /brasil/trilhasalkantay.php /
+Redirect 301 /brasil/trilhachoquequirao.php /
+Redirect 301 /brasil/mapa.php?maps=2 /
+Redirect 301 /brasil/cityarqueologico.php /
+Redirect 301 /brasil/cabalgata.php /
+Redirect 301 /brasil/rafting.php /
+Redirect 301 /brasil/trilhasalkantayitens.php /
+
+
+
+
+</IfModule>
+
+<IfModule mod_deflate.c>
+    # Force compression for mangled headers.
+    # http://developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping
+    <IfModule mod_setenvif.c>
+        <IfModule mod_headers.c>
+            SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+            RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+        </IfModule>
+    </IfModule>
+
+    <IfModule mod_filter.c>
+        AddOutputFilterByType DEFLATE application/atom+xml \
+                                      application/javascript \
+                                      application/json \
+                                      application/rss+xml \
+                                      application/vnd.ms-fontobject \
+                                      application/x-font-ttf \
+                                      application/x-web-app-manifest+json \
+                                      application/xhtml+xml \
+                                      application/xml \
+                                      font/opentype \
+                                      image/svg+xml \
+                                      image/x-icon \
+                                      text/css \
+                                      text/html \
+                                      text/plain \
+                                      text/x-component \
+                                      text/xml
+    </IfModule>
+
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+
+  # Por defecto 1 mes de caché
+  ExpiresDefault                          "access plus 1 month"
+
+  # los manifiestos appcache necesitan solicitarse cada vez, por firefox 3.6 (probablemente no necesario actualmente?
+  ExpiresByType text/cache-manifest       "access plus 0 seconds"
+
+  # El HTML nunca debe de ser cacheado
+  ExpiresByType text/html                 "access plus 0 seconds"
+
+  # Los datos dinámicos tampoco (tal vez podría variar dependiendo de tu aplicación)
+  ExpiresByType text/xml                  "access plus 0 seconds"
+  ExpiresByType application/xml           "access plus 0 seconds"
+  ExpiresByType application/json          "access plus 0 seconds"
+
+  # Una hora para los feeds (cambiar dependiendo de la fecha de actualización de tu web)
+  ExpiresByType application/rss+xml       "access plus 1 hour"
+  ExpiresByType application/atom+xml      "access plus 1 hour"
+
+  # Favicon (Sólo una semana porque el nombre no cambia, luego podría haber cambios y mantenerse el cacheado)
+  ExpiresByType image/x-icon              "access plus 1 week"
+
+  # Imágenes, vídeo, audio: 1 mes
+  ExpiresByType image/gif                 "access plus 1 month"
+  ExpiresByType image/png                 "access plus 1 month"
+  ExpiresByType image/jpeg                "access plus 1 month"
+  ExpiresByType video/ogg                 "access plus 1 month"
+  ExpiresByType audio/ogg                 "access plus 1 month"
+  ExpiresByType video/mp4                 "access plus 1 month"
+  ExpiresByType video/webm                "access plus 1 month"
+
+  # Fuentes web: 1 mes
+  ExpiresByType application/x-font-ttf    "access plus 1 month"
+  ExpiresByType font/opentype             "access plus 1 month"
+  ExpiresByType application/x-font-woff   "access plus 1 month"
+  ExpiresByType image/svg+xml             "access plus 1 month"
+  ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+
+  # CSS y JavaScript: 1 año. Ten en cuenta que si cambias los ficheros deberías usar una query string o un nombre de archivo diferente para evitar que los visitantes reciban archivos cacheados.
+  ExpiresByType text/css                  "access plus 1 year"
+  ExpiresByType application/javascript    "access plus 1 year"
+
+</IfModule>
+
+# Eliminar E-Tag
+# Estamos enviando periodos de caché muy amplios, así que no es necesario que el navegador compruebe mediante E-Tag si el fichero cambió
+<IfModule mod_headers.c>
+  Header unset ETag
+</IfModule>
+FileETag None
+
+
